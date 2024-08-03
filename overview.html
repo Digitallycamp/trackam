@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>OverView</title>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+		/>
+		<link rel="stylesheet" href="./css/overview.css" />
+	</head>
+	<body>
+		<div class="overview-wrapper">
+			<nav>
+				<div class="nav_left">
+					<span>Hi</span>
+					<a href="./index.html">
+						<span>John Deo </span>
+					</a>
+					<span class="welcome">Welcome</span>
+				</div>
+
+				<div class="nav_right">
+					<button>Create Todo</button>
+				</div>
+			</nav>
+			<main>
+				<h1>Todo List</h1>
+				<div class="todos">
+					<!--card start-->
+					<div class="card">
+						<div class="card_top">
+							<h3>Give the kids injections</h3>
+							<p>
+								Our feedback application is designed to help businesses
+								understand and act on customer...
+							</p>
+						</div>
+						<div class="todo_dates">
+							<span>Start Date: 7/29/204</span>
+							<span>End Date: 7/29/204</span>
+						</div>
+						<div class="action">
+							<span class="material-symbols-outlined"> delete </span>
+							<span class="material-symbols-outlined"> edit </span>
+						</div>
+					</div>
+					<!--card end-->
+					<!--card start-->
+					<div class="card">
+						<div class="card_top">
+							<h3>Give the kids injections</h3>
+							<p>
+								Our feedback application is designed to help businesses
+								understand and act on customer...
+							</p>
+						</div>
+						<div class="todo_dates">
+							<span>Start Date: 7/29/204</span>
+							<span>End Date: 7/29/204</span>
+						</div>
+						<div class="action">
+							<span class="material-symbols-outlined"> delete </span>
+							<span class="material-symbols-outlined"> edit </span>
+						</div>
+					</div>
+					<!--card end-->
+					<!--card start-->
+					<div class="card">
+						<div class="card_top">
+							<h3>Give the kids injections</h3>
+							<p>
+								Our feedback application is designed to help businesses
+								understand and act on customer...
+							</p>
+						</div>
+						<div class="todo_dates">
+							<span>Start Date: 7/29/204</span>
+							<span>End Date: 7/29/204</span>
+						</div>
+						<div class="action">
+							<span class="material-symbols-outlined"> delete </span>
+							<span class="material-symbols-outlined"> edit </span>
+						</div>
+					</div>
+					<!--card end-->
+				</div>
+			</main>
+			<div class="modal">
+				<div class="content">
+					<span class="material-symbols-outlined close"> close </span>
+					<form>
+						<h1>Create task</h1>
+						<div class="title">
+							<input type="text" placeholder="Enter todo" name="title" />
+							<span class="msg"></span>
+						</div>
+						<div class="des">
+							<textarea name="des" placeholder="Description"></textarea>
+							<span class="msg"></span>
+						</div>
+						<div class="date">
+							<div class="left">
+								<label>Start Date</label>
+								<input type="date" />
+							</div>
+							<div class="right">
+								<label>End Date</label>
+								<input type="date" />
+							</div>
+						</div>
+						<button type="submit">Add</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<button onclick="notifyMe()">Notify me!</button>
+
+		<script src="./js/notification.js"></script>
+		<script src="./js/modal.js"></script>
+	</body>
+</html>
